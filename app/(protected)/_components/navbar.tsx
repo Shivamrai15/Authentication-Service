@@ -11,7 +11,7 @@ export const Navbar = () => {
 
     return (
         <header>
-            <nav className="bg-[#E4D4C8] flex justify-between items-center p-4 w-full shadow-sm absolute top-0 left-0">
+            <nav className="bg-[#E4D4C8] flex justify-between items-center p-4 w-full shadow-sm sticky top-0 left-0 mb-10">
                 <div className="flex gap-x-2">
                     <Button
                         variant={ pathname === "/server" ? "default" : "outline"}
@@ -33,17 +33,6 @@ export const Navbar = () => {
                             href="/client"
                         >
                             Client
-                        </Link>
-                    </Button>
-                    <Button
-                        variant={ pathname === "/admin" ? "default" : "outline"}
-                        asChild
-                        size="sm"
-                    >
-                        <Link
-                            href="/admin"
-                        >
-                            Admin
                         </Link>
                     </Button>
                     <Button

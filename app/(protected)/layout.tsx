@@ -8,9 +8,12 @@ const ProtectedLayout = ({
     children
 } : ProtectedLayoutProps) => {
     return (
-        <div className="h-full w-full flex flex-col gap-y-10 items-center justify-center bg-[#533440] relative">
+        <div className="min-h-full w-full flex flex-col bg-[#533440] relative">
             <Navbar/>
-            {children}
+            <div className="flex justify-center items-center h-full">
+                {children}
+
+            </div>
         </div>
     )
 }
